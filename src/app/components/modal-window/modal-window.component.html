@@ -1,0 +1,9 @@
+<div class="modal-window">
+  <div class="modal-window__nav-panel">
+    <span class="modal-window__title">{{ modalTitle }}</span>
+    <button (click)="close()" class="close">&times;</button>
+  </div>
+  <div class="modal-window__content">
+    <ng-content></ng-content>
+  </div>
+</div>

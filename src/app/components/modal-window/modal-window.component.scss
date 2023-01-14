@@ -1,0 +1,60 @@
+@import "../../styles/main.scss";
+
+:host {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: rgba($black, 0.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .modal-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    max-width: 768px;
+    width: 100%;
+    min-height: 400px;
+    z-index: 100;
+    background-color: $white;
+    border-radius: 8px;
+    border: 1px solid $black;
+
+    &__content {
+      padding: 15px;
+    }
+
+    &__nav-panel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4px 15px 4px 15px;
+      background-color: $orange;
+      border-radius: 8px 8px 0 0;
+      text-align: right;
+    }
+
+    &__title {
+      font-size: 18px;
+      color: $white;
+      display: inline-block;
+      padding: 8px 0;
+    }
+
+    .close {
+      border: none;
+      outline: none;
+      background: transparent;
+      color: $white;
+      font-size: 26px;
+      cursor: pointer;
+    }
+  }
+}

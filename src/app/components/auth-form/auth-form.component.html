@@ -1,0 +1,29 @@
+<form [formGroup]="authForm" (ngSubmit)="submit(authForm)">
+  <div class="auth-form-control">
+    <label class="auth-form-control__label" for="email">Login</label>
+    <br />
+    <input
+      class="main-input"
+      id="email"
+      type="text"
+      name="email"
+      formControlName="userEmail"
+    />
+  </div>
+  <div class="auth-form-control">
+    <label class="auth-form-control__label" for="password">Password</label>
+    <br />
+    <input
+      class="main-input"
+      id="password"
+      type="password"
+      name="password"
+      formControlName="userPassword"
+    />
+  </div>
+  <div class="auth-form-control">
+    <button class="btn" type="submit" [class.disabled]="authForm.invalid">
+      submit
+    </button>
+  </div>
+</form>

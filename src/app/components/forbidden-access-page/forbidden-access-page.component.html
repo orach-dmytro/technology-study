@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <app-modal-window
+      (modalAction)="modalAction($event)"
+      [modalTitle]="'No access!'"
+    >
+      <div #content>
+        <p class="base-content-text">To get started, you need to log in!</p>
+        <button class="btn" (click)="navigate()">Login</button>
+      </div>
+    </app-modal-window>
+  </div>
+</div>

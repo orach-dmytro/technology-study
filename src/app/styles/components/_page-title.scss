@@ -1,0 +1,10 @@
+.page-title {
+  color: $white;
+  letter-spacing: 3px;
+  font-size: 36px;
+
+  @media (max-width: $mobile-max) {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+}

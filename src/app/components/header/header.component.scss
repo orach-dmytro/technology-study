@@ -1,0 +1,12 @@
+@import "../../styles/main.scss";
+:host {
+  background-color: $orange;
+  display: block;
+}
+
+.main-menu {
+  &__item {
+    color: $white;
+    cursor: pointer;
+  }
+}

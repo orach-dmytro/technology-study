@@ -1,0 +1,14 @@
+<header class="header-main container">
+  <nav class="header-main__nav row">
+    <ul class="header-main__menu main-menu">
+      <li
+        *ngFor="let menuItem of menu; let i = index"
+        routerLinkActive="active"
+        [routerLink]="menuItem.link"
+        class="main-menu__item"
+      >
+        {{ menuItem.text }}
+      </li>
+    </ul>
+  </nav>
+</header>

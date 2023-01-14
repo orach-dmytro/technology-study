@@ -1,0 +1,14 @@
+@import "../../styles/main.scss";
+
+.auth-form-control {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &__label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: $black;
+    display: inline-block;
+  }
+}
